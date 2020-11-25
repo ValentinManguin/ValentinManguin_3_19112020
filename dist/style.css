@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@media (max-width: 425px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .ohmyfood {
+    font-family: "Shrikhand";
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    font-family: "Roboto";
+  }
+
+  .topbar {
+    border: 30px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    border-top: 2px solid lightgray;
+  }
+
+  .topbar p {
+    padding-right: 40px;
+  }
+
+  .topbar i {
+    padding-right: 20px;
+  }
+
+  .réservez {
+    border: 30px;
+    background-color: #f3f2f2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    border-radius: 1em;
+    background-color: #FF79DA;
+    color: white;
+  }
+
+  .Fonctionnement {
+    list-style: none;
+    font-family: "Roboto";
+  }
+
+  .choisissez {
+    border-radius: 1em;
+    background-color: #f3f0f0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .composez {
+    border-radius: 1em;
+    background-color: #f3f0f0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .dégustez {
+    border-radius: 1em;
+    background-color: #f3f0f0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .Restaurants {
+    list-style: none;
+    font-family: "Roboto";
+  }
+
+  .palette {
+    background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    width: 100%;
+    height: 100px;
+  }
+
+  Footer {
+    border: 30px;
+    background-color: #4b4b4b;
+  }
+
+  Footer p {
+    color: white;
+    font-family: "Roboto";
+  }
+
+  Footer .logo {
+    font-family: "Shrikhand";
+    color: white;
+    padding-top: 15px;
+  }
+
+  Footer i {
+    color: white;
+  }
+
+  Footer li {
+    list-style: none;
+  }
+
+  .proposer {
+    display: flex;
+  }
+
+  .devenir {
+    display: flex;
+  }
+}
