@@ -45,13 +45,18 @@
   }
 
   button {
-    border-radius: 30px;
+    border-radius: 10rem;
     background-color: #FF79DA;
     color: white;
     font-size: medium;
     width: 250px;
     height: 60px;
     font-weight: bold;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  button:hover {
+    transform: scale(1.15);
   }
 
   .Fonctionnement {
@@ -125,6 +130,15 @@
     background-color: white;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+  }
+
+  .palette .nouveau {
+    border: solid #99E2D0;
+    background-color: #99E2D0;
+    width: 25%;
+    color: #207a64;
+    font-weight: bold;
   }
 
   .note {
@@ -133,6 +147,18 @@
     background-color: white;
     display: flex;
     justify-content: flex-start;
+  }
+
+  .note .nouveau {
+    border: solid #99E2D0;
+    background-color: #99E2D0;
+    width: 25%;
+    color: #207a64;
+    font-weight: bold;
+  }
+
+  .note i {
+    color: #9356DC;
   }
 
   .française {
