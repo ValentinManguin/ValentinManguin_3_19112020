@@ -59,7 +59,7 @@ header {
 
 button {
   border-radius: 10rem;
-  background-color: #FF79DA;
+  background-color: #ff5cd1;
   color: white;
   font-size: medium;
   width: 250px;
@@ -70,6 +70,7 @@ button {
 }
 button:hover {
   transform: scale(1.15);
+  background-color: #FF79DA;
 }
 
 .Fonctionnement {
@@ -82,8 +83,14 @@ button:hover {
   background-color: #9356DC;
   color: white;
   padding-right: 10px;
+  padding-left: 5px;
   height: 20px;
   width: 20px;
+}
+
+.Fonctionnement li {
+  margin-bottom: 20px;
+  width: 98%;
 }
 
 .Fonctionnement i {
@@ -213,4 +220,10 @@ Footer li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (min-width: 425px) {
+  body {
+    width: 100%;
+  }
 }
