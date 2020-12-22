@@ -7,6 +7,7 @@ body {
     margin: 0;
 }
 
+
 a,
 a:hover,
 a:active,
@@ -26,6 +27,69 @@ header {
     font-family: "Roboto";
 }
 
+
+header img {
+    height: 250px;
+    width: 100%;
+}
+
+header .fleche {
+    position: absolute;
+    top: 35px;
+    margin-left: 20px;
+}
+
+main {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #e6e6e6;
+    width: 100%;
+    
+}
+
+
+main h2 {
+    font-family: "Shrikhand";
+}
+
+main ul {
+    list-style: none;
+    font-family: "Roboto";
+}
+
+main li {
+    border-radius: 30px;
+    background-color: white;
+    width: 92%;
+}
+
+main .titre {
+    color: grey;
+    border-bottom: solid 5px #99E2D0;
+    
+}
+
+main .€ {
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+    margin-left: 300px;
+}
+
+main .texte1 {
+font-weight: bold;
+}
+
+main .texte2 {
+color: grey;
+}
+
+main button {
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
 .topbar {
     border: 30px;
     background-color: #e6e6e6;
@@ -34,6 +98,7 @@ header {
     align-items: center;
     font-family: "Roboto";
     border-top: 2px solid lightgray;
+    
 
 }
 
@@ -61,7 +126,7 @@ header {
 
 button {
     border-radius: 10rem;
-    background-color: #ff5cd1;
+    background: linear-gradient(#FF79DA , #9356DC);
     color: white;
     font-size: medium;
     width: 250px;
@@ -69,6 +134,8 @@ button {
     font-weight: bold;
     transform: scale(1);
     transition: transform 400ms;
+    margin-bottom: 50px;
+    filter: drop-shadow(0 0 0.2rem gray);
 
     &:hover {
         transform: scale(1.15);
@@ -79,6 +146,8 @@ button {
 .Fonctionnement {
     list-style: none;
     font-family: "Roboto";
+    background-color: white;
+   
 }
 
 .Fonctionnement .numero {
@@ -89,11 +158,14 @@ button {
     padding-left: 5px;
     height: 20px;
     width: 20px;
+    position: relative;
+    left: -10px;
 }
 
 .Fonctionnement li {
     margin-bottom: 20px;
     width: 98%;
+    
 
 }
 
@@ -132,7 +204,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    
 }
 
 .dégustez i {
@@ -145,11 +217,16 @@ button {
     font-family: "Roboto";
     background-color: #e6e6e6;
     margin: auto;
-    padding: 0;
+    padding: 20px 0;
+    
 }
 
 .Restaurants i:hover {
     color: #9356DC;
+}
+
+.Restaurants p {
+    margin-left: 20px;
 }
 
 .Restaurants a {
@@ -169,7 +246,7 @@ button {
 
 // tuile pour chaque restaurants 
 .Restaurants li {
-    margin: auto;
+    margin: 20px auto;
     border-radius: 30px;
     width: 81%;
     background-color: white;
@@ -177,6 +254,7 @@ button {
     justify-content: flex-start;
     align-items: center;
     
+
 
 
 }
@@ -187,6 +265,7 @@ button {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     object-fit: cover; //nouvelle proriété pour centrer les images sans être déformez
+    
 }
 
 
@@ -206,29 +285,32 @@ button {
 
 Footer {
     border: 30px;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(54, 54, 54);
+    padding: 10px;
 
     p {
         color: white;
         font-family: "Roboto";
-
+        margin: 0;
     }
 
     .logo {
         font-family: "Shrikhand";
         color: white;
         padding-top: 15px;
+        margin: 0;
     }
 
     i {
         color: white;
-        padding-right: 10px;
+        padding-right: 7px;
 
     }
 
     li {
         list-style: none;
-        padding-left: 35px;
+        padding: 5px 0;
+
     }
 }
 
@@ -236,6 +318,11 @@ Footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
+
+    i {
+        padding-right: 14px;
+    }
 
 
 
@@ -246,14 +333,23 @@ Footer {
     justify-content: flex-start;
     align-items: center;
 
+    i {
+        position: relative;
+        left: -3px;
+    }
+
 }
 
 
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
 
-body {
-    width: 100%;
-}
+    body {
+        width: 100%;
+    }
+
+    .Fonctionnement li {
+        width: 91%;
+    }
 
 }

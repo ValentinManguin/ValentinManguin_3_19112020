@@ -27,6 +27,64 @@ header {
   font-family: "Roboto";
 }
 
+header img {
+  height: 250px;
+  width: 100%;
+}
+
+header .fleche {
+  position: absolute;
+  top: 35px;
+  margin-left: 20px;
+}
+
+main {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #e6e6e6;
+  width: 100%;
+}
+
+main h2 {
+  font-family: "Shrikhand";
+}
+
+main ul {
+  list-style: none;
+  font-family: "Roboto";
+}
+
+main li {
+  border-radius: 30px;
+  background-color: white;
+  width: 92%;
+}
+
+main .titre {
+  color: grey;
+  border-bottom: solid 5px #99E2D0;
+}
+
+main .€ {
+  font-weight: bold;
+  color: #5a5a5a;
+  margin-left: 300px;
+}
+
+main .texte1 {
+  font-weight: bold;
+}
+
+main .texte2 {
+  color: grey;
+}
+
+main button {
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
 .topbar {
   border: 30px;
   background-color: #e6e6e6;
@@ -59,7 +117,7 @@ header {
 
 button {
   border-radius: 10rem;
-  background-color: #ff5cd1;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   font-size: medium;
   width: 250px;
@@ -67,6 +125,8 @@ button {
   font-weight: bold;
   transform: scale(1);
   transition: transform 400ms;
+  margin-bottom: 50px;
+  filter: drop-shadow(0 0 0.2rem gray);
 }
 button:hover {
   transform: scale(1.15);
@@ -76,6 +136,7 @@ button:hover {
 .Fonctionnement {
   list-style: none;
   font-family: "Roboto";
+  background-color: white;
 }
 
 .Fonctionnement .numero {
@@ -86,6 +147,8 @@ button:hover {
   padding-left: 5px;
   height: 20px;
   width: 20px;
+  position: relative;
+  left: -10px;
 }
 
 .Fonctionnement li {
@@ -136,11 +199,15 @@ button:hover {
   font-family: "Roboto";
   background-color: #e6e6e6;
   margin: auto;
-  padding: 0;
+  padding: 20px 0;
 }
 
 .Restaurants i:hover {
   color: #9356DC;
+}
+
+.Restaurants p {
+  margin-left: 20px;
 }
 
 .Restaurants a {
@@ -159,7 +226,7 @@ button:hover {
 }
 
 .Restaurants li {
-  margin: auto;
+  margin: 20px auto;
   border-radius: 30px;
   width: 81%;
   background-color: white;
@@ -190,30 +257,37 @@ button:hover {
 
 Footer {
   border: 30px;
-  background-color: #4b4b4b;
+  background-color: #363636;
+  padding: 10px;
 }
 Footer p {
   color: white;
   font-family: "Roboto";
+  margin: 0;
 }
 Footer .logo {
   font-family: "Shrikhand";
   color: white;
   padding-top: 15px;
+  margin: 0;
 }
 Footer i {
   color: white;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 Footer li {
   list-style: none;
-  padding-left: 35px;
+  padding: 5px 0;
 }
 
 .proposer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 20px;
+}
+.proposer i {
+  padding-right: 14px;
 }
 
 .devenir {
@@ -221,9 +295,17 @@ Footer li {
   justify-content: flex-start;
   align-items: center;
 }
+.devenir i {
+  position: relative;
+  left: -3px;
+}
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   body {
     width: 100%;
+  }
+
+  .Fonctionnement li {
+    width: 91%;
   }
 }
