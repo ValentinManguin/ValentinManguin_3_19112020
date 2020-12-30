@@ -8,6 +8,44 @@ body {
 }
 
 
+.loader {
+    display: flex;
+    justify-content: center;
+      align-items: center;
+  }
+  
+
+  .loader > span {
+    background: black;
+    border-radius: 50%;
+    margin: 5rem 0.5rem;
+    animation: bouncingLoader 2s ;
+  }
+  
+  .loader > span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loader > span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  
+  @keyframes bouncingLoader {
+    from {
+      width: 0.1rem;
+      height: 0.1rem;
+      opacity: 1;
+      transform: translate3d(0);
+    }
+    to {
+      width: 1rem;
+      height: 1rem;
+      opacity: 0%;
+      transform: translate3d(0, -1rem, 0);
+    }
+  }
+
 a,
 a:hover,
 a:active,
@@ -31,6 +69,7 @@ header {
 header img {
     height: 250px;
     width: 100%;
+    object-fit: cover;
 }
 
 header .fleche {
@@ -44,12 +83,28 @@ main {
     border-top-right-radius: 30px;
     background-color: #e6e6e6;
     width: 100%;
-    
-}
+    margin: auto;
+    max-width: 1000px;
 
+}
 
 main h2 {
     font-family: "Shrikhand";
+    margin-left: 39px;
+    font-size: 31px;
+}
+
+main .coeur {
+    transition: all 1s ease-in;
+    font-size: 25px;
+    position: absolute;
+    right: 530px;
+    top: 380px;
+    
+}
+
+main .coeur:hover {
+    color: #9356DC;
 }
 
 main ul {
@@ -66,21 +121,24 @@ main li {
 main .titre {
     color: grey;
     border-bottom: solid 5px #99E2D0;
-    
+
 }
 
 main .€ {
     font-weight: bold;
     color: rgb(90, 90, 90);
-    margin-left: 300px;
+    position: absolute;
+    right: 540px;
+    margin-top: -41px;
+    
 }
 
 main .texte1 {
-font-weight: bold;
+    font-weight: bold;
 }
 
 main .texte2 {
-color: grey;
+    color: grey;
 }
 
 main button {
@@ -98,7 +156,7 @@ main button {
     align-items: center;
     font-family: "Roboto";
     border-top: 2px solid lightgray;
-    
+
 
 }
 
@@ -116,7 +174,8 @@ main button {
     background-color: rgb(243, 242, 242);
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .réservez p {
@@ -126,7 +185,7 @@ main button {
 
 button {
     border-radius: 10rem;
-    background: linear-gradient(#FF79DA , #9356DC);
+    background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     font-size: medium;
     width: 250px;
@@ -147,7 +206,7 @@ button {
     list-style: none;
     font-family: "Roboto";
     background-color: white;
-   
+
 }
 
 .Fonctionnement .numero {
@@ -165,7 +224,7 @@ button {
 .Fonctionnement li {
     margin-bottom: 20px;
     width: 98%;
-    
+
 
 }
 
@@ -204,7 +263,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
 
 .dégustez i {
@@ -218,7 +277,7 @@ button {
     background-color: #e6e6e6;
     margin: auto;
     padding: 20px 0;
-    
+
 }
 
 .Restaurants i:hover {
@@ -253,7 +312,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
 
 
 
@@ -265,7 +324,7 @@ button {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     object-fit: cover; //nouvelle proriété pour centrer les images sans être déformez
-    
+
 }
 
 
@@ -351,5 +410,9 @@ Footer {
     .Fonctionnement li {
         width: 91%;
     }
-
+main .coeur {
+    position: absolute;
+    right: 34px;
+    top: 380px;
+}
 }
