@@ -9,6 +9,9 @@ body {
 }
 
 .loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +115,114 @@ main li {
   width: 92%;
 }
 
+.fricassée {
+  animation: fricassée 2s;
+}
+
+@keyframes fricassée {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.foie {
+  animation: foie 4s;
+}
+
+@keyframes foie {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.oeuf {
+  animation: oeuf 6s;
+}
+
+@keyframes oeuf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.filet {
+  animation: filet 2s;
+}
+
+@keyframes filet {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.parmentier {
+  animation: parmentier 4s;
+}
+
+@keyframes parmentier {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.turbot {
+  animation: turbot 6s;
+}
+
+@keyframes turbot {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.paris {
+  animation: paris 2s;
+}
+
+@keyframes paris {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.macaron {
+  animation: macaron 4s;
+}
+
+@keyframes macaron {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mousse {
+  animation: mousse 6s;
+}
+
+@keyframes mousse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 main .titre {
   color: grey;
   border-bottom: solid 5px #99E2D0;
