@@ -15,8 +15,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    z-index: 1000;
+    animation: fade 2.5s forwards;
+    overflow: hidden;
+}
 
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
 
+    99% {
+        opacity: 0;
+        height: 100vh;
+    }
+    100%{
+        opacity: 0;
+        height: 0;
+    }
+    
 }
 
 
@@ -91,8 +112,8 @@ main {
     width: 100%;
     margin: auto;
     max-width: 1000px;
-
 }
+
 
 main h2 {
     font-family: "Shrikhand";
@@ -100,16 +121,22 @@ main h2 {
     font-size: 31px;
 }
 
-main .coeur {
+.menu .coeur {
     transition: all 1s ease-in;
     font-size: 25px;
     position: absolute;
     right: 530px;
     top: 380px;
+    text-shadow: 0 0 2px black;
+    color: #e6e6e6;
+    i {
+        font-weight: 600;
+    }
+
 
 }
 
-main .coeur:hover {
+.menu .coeur:hover {
     color: #9356DC;
 }
 
@@ -125,135 +152,95 @@ main li {
     
 }
 
-.fricassée {
-    animation: fricassée 2s;
+.menu ul {
+    
+    li{
+        animation: apparition_menu 2s forwards;
+        opacity: 0 ;
+        position: relative;
+        bottom: -15px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-bottom: 10px;
+        text-overflow: ellipsis;
+        
+        
+        
+        &:nth-child(1){
+            animation-delay: 0.3s;
+        }
+        &:nth-child(2){
+            animation-delay: 0.6s;
+        }&:nth-child(3){
+            animation-delay: 0.9s;
+        }&:nth-child(4){
+            animation-delay: 1.2s;
+        }
+        .texte {
+            flex-grow: 1;
+            position: relative;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            
+        }
+        .checkbox {
+            background-color: #99E2D0;
+            width: 0px;
+            transition: all 1s ;
+            height: 89px;
+            overflow: hidden;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i {
+                transform: rotate(-360deg);
+                transition: transform 500ms ease-in;
+            }
+           
+        }
+        &:hover{
+            .checkbox {
+                width: 50px;
+                
+                i {
+                    transform: rotate(1turn);
+                    transition: transform 500ms ease-in;
+                }
+            }
+        }
+    }
+
+
 }
 
-@keyframes fricassée {
+
+@keyframes apparition_menu {
     from {
         opacity: 0;
+        bottom: -15px;
     }
 
     to {
         opacity: 1;
-    }
-}
-
-.foie {
-    animation: foie 4s;
-}
-
-@keyframes foie {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.oeuf {
-    animation: oeuf 6s;
-}
-
-@keyframes oeuf {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.filet {
-    animation: filet 2s;
-}
-
-@keyframes filet {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.parmentier {
-    animation: parmentier 4s;
-}
-
-@keyframes parmentier {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.turbot {
-    animation: turbot 6s;
-}
-
-@keyframes turbot {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.paris {
-    animation: paris 2s;
-}
-
-@keyframes paris {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.macaron {
-    animation: macaron 4s;
-}
-
-@keyframes macaron {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.mousse {
-    animation: mousse 6s;
-}
-
-@keyframes mousse {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
+        bottom: 0;
     }
 }
 
 main .titre {
-    color: grey;
-    border-bottom: solid 5px #99E2D0;
+    display: inline-block;
+    color: rgb(77, 77, 77);
+    margin-left: 41px;
+}
+
+main .titre::after {
+    border-bottom: solid 3px #99E2D0;
+    display: block;
+    width: 42px;
+    content: '';
+    
 
 }
 
@@ -261,21 +248,24 @@ main .€ {
     font-weight: bold;
     color: rgb(90, 90, 90);
     position: absolute;
-    right: 540px;
-    margin-top: -41px;
+    right: 0px;
+    bottom: 0;
+    margin-right: 10px;
 
 }
 
 main .texte1 {
     font-weight: bold;
+    margin-left: 10px;
 }
 
 main .texte2 {
     color: grey;
+    margin-left: 10px;
 }
 
 main button {
-    margin-left: 90px;
+    margin-left:365px;
     margin-top: 50px;
     margin-bottom: 70px;
 }
@@ -549,4 +539,6 @@ Footer {
         right: 34px;
         top: 380px;
     }
+
+    
 }
