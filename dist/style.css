@@ -470,4 +470,8 @@ Footer li {
     right: 34px;
     top: 380px;
   }
+
+  main button {
+    margin-left: 90px;
+  }
 }

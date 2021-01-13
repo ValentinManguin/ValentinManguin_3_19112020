@@ -165,6 +165,8 @@ main li {
         margin-bottom: 10px;
         text-overflow: ellipsis;
         
+            
+        
         
         
         &:nth-child(1){
@@ -183,6 +185,8 @@ main li {
             text-overflow: ellipsis;
             overflow: hidden;
             
+            
+            
         }
         .checkbox {
             background-color: #99E2D0;
@@ -195,9 +199,11 @@ main li {
             justify-content: center;
             align-items: center;
             
+            
             i {
                 transform: rotate(-360deg);
                 transition: transform 500ms ease-in;
+               
             }
            
         }
@@ -539,6 +545,9 @@ Footer {
         right: 34px;
         top: 380px;
     }
-
-    
+    main button {
+        
+        margin-left: 90px;
+        
+    }
 }
