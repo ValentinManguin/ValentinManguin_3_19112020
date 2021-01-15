@@ -22,9 +22,10 @@ body {
 }
 
 @keyframes fade {
-    0%{
+    0% {
         opacity: 1;
     }
+
     80% {
         opacity: 1;
     }
@@ -33,11 +34,12 @@ body {
         opacity: 0;
         height: 100vh;
     }
-    100%{
+
+    100% {
         opacity: 0;
         height: 0;
     }
-    
+
 }
 
 
@@ -106,12 +108,17 @@ header .fleche {
 }
 
 main {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    position: relative;
     background-color: #e6e6e6;
     width: 100%;
     margin: auto;
     max-width: 1000px;
+    text-align: center;
+
+    * {
+        text-align: initial;
+    }
+
 }
 
 
@@ -119,6 +126,7 @@ main h2 {
     font-family: "Shrikhand";
     margin-left: 39px;
     font-size: 31px;
+    margin-top: 0;
 }
 
 .menu .coeur {
@@ -129,6 +137,7 @@ main h2 {
     top: 380px;
     text-shadow: 0 0 2px black;
     color: #e6e6e6;
+
     i {
         font-weight: 600;
     }
@@ -149,14 +158,30 @@ main li {
     border-radius: 30px;
     background-color: white;
     width: 92%;
-    
+    filter: drop-shadow(0 0 0.5rem #c9c9c9);
+
+}
+
+.menu {
+    &::before {
+        content: '';
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #e6e6e6;
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+
+    }
 }
 
 .menu ul {
-    
-    li{
+
+    li {
         animation: apparition_menu 2s forwards;
-        opacity: 0 ;
+        opacity: 0;
         position: relative;
         bottom: -15px;
         display: flex;
@@ -164,53 +189,61 @@ main li {
         overflow: hidden;
         margin-bottom: 10px;
         text-overflow: ellipsis;
-        
-            
-        
-        
-        
-        &:nth-child(1){
+
+
+
+
+
+        &:nth-child(1) {
             animation-delay: 0.3s;
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             animation-delay: 0.6s;
-        }&:nth-child(3){
+        }
+
+        &:nth-child(3) {
             animation-delay: 0.9s;
-        }&:nth-child(4){
+        }
+
+        &:nth-child(4) {
             animation-delay: 1.2s;
         }
+
         .texte {
             flex-grow: 1;
             position: relative;
             text-overflow: ellipsis;
             overflow: hidden;
-            
-            
-            
+
+
+
         }
+
         .checkbox {
             background-color: #99E2D0;
             width: 0px;
-            transition: all 1s ;
+            transition: all 1s;
             height: 89px;
             overflow: hidden;
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            
+
+
             i {
                 transform: rotate(-360deg);
                 transition: transform 500ms ease-in;
-               
+
             }
-           
+
         }
-        &:hover{
+
+        &:hover {
             .checkbox {
                 width: 50px;
-                
+
                 i {
                     transform: rotate(1turn);
                     transition: transform 500ms ease-in;
@@ -236,7 +269,7 @@ main li {
 }
 
 main .titre {
-    display: inline-block;
+
     color: rgb(77, 77, 77);
     margin-left: 41px;
 }
@@ -246,7 +279,7 @@ main .titre::after {
     display: block;
     width: 42px;
     content: '';
-    
+
 
 }
 
@@ -268,12 +301,17 @@ main .texte1 {
 main .texte2 {
     color: grey;
     margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 40px;
 }
 
 main button {
-    margin-left:365px;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin: 50px auto 70px auto;
+    text-align: center;
+    
+
 }
 
 
@@ -324,6 +362,7 @@ button {
     transition: transform 400ms;
     margin-bottom: 50px;
     filter: drop-shadow(0 0 0.2rem gray);
+    border: 0;
 
     &:hover {
         transform: scale(1.15);
@@ -335,6 +374,8 @@ button {
     list-style: none;
     font-family: "Roboto";
     background-color: white;
+    margin: auto;
+    padding: 15px;
 
 }
 
@@ -353,6 +394,8 @@ button {
 .Fonctionnement li {
     margin-bottom: 20px;
     width: 98%;
+    margin-right: auto;
+    margin-left: auto;
 
 
 }
@@ -373,6 +416,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    filter: drop-shadow(0 0 0.5rem #c9c9c9);
 
 }
 
@@ -382,6 +426,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    filter: drop-shadow(0 0 0.5rem #c9c9c9);
 
 
 }
@@ -392,6 +437,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    filter: drop-shadow(0 0 0.5rem #c9c9c9);
 
 }
 
@@ -441,6 +487,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    filter: drop-shadow(0 0 0.5rem #c9c9c9);
 
 
 
@@ -545,9 +592,5 @@ Footer {
         right: 34px;
         top: 380px;
     }
-    main button {
-        
-        margin-left: 90px;
-        
-    }
+
 }

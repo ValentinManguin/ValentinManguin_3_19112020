@@ -98,18 +98,22 @@ header .fleche {
 }
 
 main {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  position: relative;
   background-color: #e6e6e6;
   width: 100%;
   margin: auto;
   max-width: 1000px;
+  text-align: center;
+}
+main * {
+  text-align: initial;
 }
 
 main h2 {
   font-family: "Shrikhand";
   margin-left: 39px;
   font-size: 31px;
+  margin-top: 0;
 }
 
 .menu .coeur {
@@ -138,6 +142,19 @@ main li {
   border-radius: 30px;
   background-color: white;
   width: 92%;
+  filter: drop-shadow(0 0 0.5rem #c9c9c9);
+}
+
+.menu::before {
+  content: "";
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  left: 0;
 }
 
 .menu ul li {
@@ -203,7 +220,6 @@ main li {
   }
 }
 main .titre {
-  display: inline-block;
   color: #4d4d4d;
   margin-left: 41px;
 }
@@ -232,12 +248,15 @@ main .texte1 {
 main .texte2 {
   color: grey;
   margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 40px;
 }
 
 main button {
-  margin-left: 365px;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  margin: 50px auto 70px auto;
+  text-align: center;
 }
 
 .topbar {
@@ -283,6 +302,7 @@ button {
   transition: transform 400ms;
   margin-bottom: 50px;
   filter: drop-shadow(0 0 0.2rem gray);
+  border: 0;
 }
 button:hover {
   transform: scale(1.15);
@@ -293,6 +313,8 @@ button:hover {
   list-style: none;
   font-family: "Roboto";
   background-color: white;
+  margin: auto;
+  padding: 15px;
 }
 
 .Fonctionnement .numero {
@@ -310,6 +332,8 @@ button:hover {
 .Fonctionnement li {
   margin-bottom: 20px;
   width: 98%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .Fonctionnement i {
@@ -328,6 +352,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  filter: drop-shadow(0 0 0.5rem #c9c9c9);
 }
 
 .composez {
@@ -336,6 +361,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  filter: drop-shadow(0 0 0.5rem #c9c9c9);
 }
 
 .dégustez {
@@ -344,6 +370,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  filter: drop-shadow(0 0 0.5rem #c9c9c9);
 }
 
 .dégustez i {
@@ -389,6 +416,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  filter: drop-shadow(0 0 0.5rem #c9c9c9);
 }
 
 .Restaurants img {
@@ -469,9 +497,5 @@ Footer li {
     position: absolute;
     right: 34px;
     top: 380px;
-  }
-
-  main button {
-    margin-left: 90px;
   }
 }
