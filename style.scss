@@ -9,6 +9,7 @@ body {
 
 
 .loader {
+    //loader pour la page Index
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -129,12 +130,12 @@ main h2 {
     margin-top: 0;
 }
 
-.menu .coeur {
+.menu .coeur {  //coeur pages menu
     transition: all 1s ease-in;
     font-size: 25px;
     position: absolute;
-    right: 530px;
-    top: 380px;
+    right: 15px;
+    top: 10px;
     text-shadow: 0 0 2px black;
     color: #e6e6e6;
 
@@ -163,6 +164,8 @@ main li {
 }
 
 .menu {
+
+    //main pour les pages menu
     &::before {
         content: '';
         border-top-left-radius: 30px;
@@ -180,6 +183,7 @@ main li {
 .menu ul {
 
     li {
+        //animation d'apparition des menu
         animation: apparition_menu 2s forwards;
         opacity: 0;
         position: relative;
@@ -233,6 +237,7 @@ main li {
 
 
             i {
+                //animation de la checkbox
                 transform: rotate(-360deg);
                 transition: transform 500ms ease-in;
 
@@ -274,7 +279,7 @@ main .titre {
     margin-left: 41px;
 }
 
-main .titre::after {
+main .titre::after {  //bordure des titres pages menu
     border-bottom: solid 3px #99E2D0;
     display: block;
     width: 42px;
@@ -310,7 +315,7 @@ main .texte2 {
 main button {
     margin: 50px auto 70px auto;
     text-align: center;
-    
+
 
 }
 

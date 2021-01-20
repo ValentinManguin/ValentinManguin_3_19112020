@@ -120,8 +120,8 @@ main h2 {
   transition: all 1s ease-in;
   font-size: 25px;
   position: absolute;
-  right: 530px;
-  top: 380px;
+  right: 15px;
+  top: 10px;
   text-shadow: 0 0 2px black;
   color: #e6e6e6;
 }
