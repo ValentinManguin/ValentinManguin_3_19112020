@@ -130,7 +130,8 @@ main h2 {
     margin-top: 0;
 }
 
-.menu .coeur {  //coeur pages menu
+.menu .coeur {
+    //coeur pages menu
     transition: all 1s ease-in;
     font-size: 25px;
     position: absolute;
@@ -279,7 +280,8 @@ main .titre {
     margin-left: 41px;
 }
 
-main .titre::after {  //bordure des titres pages menu
+main .titre::after {
+    //bordure des titres pages menu
     border-bottom: solid 3px #99E2D0;
     display: block;
     width: 42px;
@@ -371,7 +373,9 @@ button {
 
     &:hover {
         transform: scale(1.15);
-        background-color: #FF79DA;
+        background-color: #f391d7;
+        filter: brightness(1.05) drop-shadow(0 0 0.3rem black);
+
     }
 }
 
@@ -401,8 +405,18 @@ button {
     width: 98%;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 1em;
+    background-color: rgb(243, 240, 240);
+
+    filter: drop-shadow(0 0 0.5rem #c9c9c9);
 
 
+}
+
+.Fonctionnement a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .Fonctionnement i {
@@ -415,35 +429,10 @@ button {
     font-weight: bold;
 }
 
-.choisissez {
-    border-radius: 1em;
-    background-color: rgb(243, 240, 240);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    filter: drop-shadow(0 0 0.5rem #c9c9c9);
 
-}
+.Fonctionnement .dégustez {
 
-.composez {
-    border-radius: 1em;
-    background-color: rgb(243, 240, 240);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    filter: drop-shadow(0 0 0.5rem #c9c9c9);
-
-
-}
-
-.dégustez {
-    border-radius: 1em;
     background-color: #efe6fd;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    filter: drop-shadow(0 0 0.5rem #c9c9c9);
-
 }
 
 .dégustez i {
@@ -464,7 +453,7 @@ button {
     color: #9356DC;
 }
 
-.Restaurants p {
+.Restaurants h3, .Restaurants p {
     margin-left: 20px;
 }
 

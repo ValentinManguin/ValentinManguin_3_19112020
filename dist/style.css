@@ -306,7 +306,8 @@ button {
 }
 button:hover {
   transform: scale(1.15);
-  background-color: #FF79DA;
+  background-color: #f391d7;
+  filter: brightness(1.05) drop-shadow(0 0 0.3rem black);
 }
 
 .Fonctionnement {
@@ -334,6 +335,15 @@ button:hover {
   width: 98%;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 1em;
+  background-color: #f3f0f0;
+  filter: drop-shadow(0 0 0.5rem #c9c9c9);
+}
+
+.Fonctionnement a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .Fonctionnement i {
@@ -346,31 +356,8 @@ button:hover {
   font-weight: bold;
 }
 
-.choisissez {
-  border-radius: 1em;
-  background-color: #f3f0f0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  filter: drop-shadow(0 0 0.5rem #c9c9c9);
-}
-
-.composez {
-  border-radius: 1em;
-  background-color: #f3f0f0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  filter: drop-shadow(0 0 0.5rem #c9c9c9);
-}
-
-.dégustez {
-  border-radius: 1em;
+.Fonctionnement .dégustez {
   background-color: #efe6fd;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  filter: drop-shadow(0 0 0.5rem #c9c9c9);
 }
 
 .dégustez i {
@@ -389,7 +376,7 @@ button:hover {
   color: #9356DC;
 }
 
-.Restaurants p {
+.Restaurants h3, .Restaurants p {
   margin-left: 20px;
 }
 
